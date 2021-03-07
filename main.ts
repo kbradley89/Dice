@@ -26,10 +26,11 @@ input.onButtonPressed(Button.B, function () {
     ShowLowtoUp()
 })
 input.onGesture(Gesture.Shake, function () {
-    soundExpression.happy.play()
+    soundExpression.mysterious.play()
     for (let index = 0; index < 25; index++) {
         basic.showNumber(randint(DLow, DUp),10)
     }
+    basic.clearScreen()
     basic.showNumber(randint(DLow, DUp))
 })
 function ShowLowtoUp () {
